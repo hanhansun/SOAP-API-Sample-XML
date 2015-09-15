@@ -1,0 +1,178 @@
+SOAP Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.esri.com/schemas/ArcGIS/10.1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GeocodeAddress>
+         <Address>
+            <PropertyArray>
+               <!--Zero or more repetitions:-->
+               <PropertySetProperty>
+                  <Key>Address</Key>
+                  <!--Optional:-->
+                  <Value>100 10th street, atlanta,ga, 30309</Value>
+               </PropertySetProperty>
+            </PropertyArray>
+         </Address>
+      </ns:GeocodeAddress>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+---------------------------------------------华丽の分割线------------------------------------------------------
+SOAP Respond:
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.esri.com/schemas/ArcGIS/10.1">
+   <soap:Body>
+      <tns:GeocodeAddressResponse>
+         <Result xsi:type="tns:PropertySet">
+            <PropertyArray xsi:type="tns:ArrayOfPropertySetProperty">
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Shape</Key>
+                  <Value xsi:type="tns:PointN">
+                     <X>-84.390519308774557</X>
+                     <Y>33.781498994794021</Y>
+                     <SpatialReference xsi:type="tns:GeographicCoordinateSystem">
+                        <WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4326]]</WKT>
+                        <XOrigin>-400</XOrigin>
+                        <YOrigin>-400</YOrigin>
+                        <XYScale>1111948722.2222221</XYScale>
+                        <ZOrigin>-100000</ZOrigin>
+                        <ZScale>10000</ZScale>
+                        <MOrigin>-100000</MOrigin>
+                        <MScale>10000</MScale>
+                        <XYTolerance>8.983152841195215e-009</XYTolerance>
+                        <ZTolerance>0.001</ZTolerance>
+                        <MTolerance>0.001</MTolerance>
+                        <HighPrecision>true</HighPrecision>
+                        <LeftLongitude>-180</LeftLongitude>
+                        <WKID>4326</WKID>
+                        <LatestWKID>4326</LatestWKID>
+                     </SpatialReference>
+                  </Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Status</Key>
+                  <Value xsi:type="xsd:string">T</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Score</Key>
+                  <Value xsi:type="xsd:double">92.430000000000007</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Match_addr</Key>
+                  <Value xsi:type="xsd:string">100 10th St NW, Atlanta, Georgia, 30309</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>StAddr</Key>
+                  <Value xsi:type="xsd:string">100 10th St NW</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Country</Key>
+                  <Value xsi:type="xsd:string">USA</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Addr_type</Key>
+                  <Value xsi:type="xsd:string">StreetAddress</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Distance</Key>
+                  <Value xsi:type="xsd:double">0</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>X</Key>
+                  <Value xsi:type="xsd:double">-84.390519999999995</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Y</Key>
+                  <Value xsi:type="xsd:double">33.781498999999997</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>DisplayX</Key>
+                  <Value xsi:type="xsd:double">-84.390519999999995</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>DisplayY</Key>
+                  <Value xsi:type="xsd:double">33.781498999999997</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Xmin</Key>
+                  <Value xsi:type="xsd:double">-84.39152</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Xmax</Key>
+                  <Value xsi:type="xsd:double">-84.389520000000005</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Ymin</Key>
+                  <Value xsi:type="xsd:double">33.780498999999999</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Ymax</Key>
+                  <Value xsi:type="xsd:double">33.782499000000001</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Side</Key>
+                  <Value xsi:type="xsd:string">L</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>AddNum</Key>
+                  <Value xsi:type="xsd:string">100</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>AddNumFrom</Key>
+                  <Value xsi:type="xsd:string">100</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>AddNumTo</Key>
+                  <Value xsi:type="xsd:string">100</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>StPreDir</Key>
+                  <Value xsi:type="xsd:string"/>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>StPreType</Key>
+                  <Value xsi:type="xsd:string"/>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>StName</Key>
+                  <Value xsi:type="xsd:string">10th</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>StType</Key>
+                  <Value xsi:type="xsd:string">St</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>StDir</Key>
+                  <Value xsi:type="xsd:string">NW</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>City</Key>
+                  <Value xsi:type="xsd:string">Atlanta</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Region</Key>
+                  <Value xsi:type="xsd:string">Georgia</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>RegionAbbr</Key>
+                  <Value xsi:type="xsd:string">GA</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Postal</Key>
+                  <Value xsi:type="xsd:string">30309</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>LangCode</Key>
+                  <Value xsi:type="xsd:string">ENG</Value>
+               </PropertySetProperty>
+               <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                  <Key>Timeout_expired</Key>
+                  <Value xsi:type="xsd:boolean">false</Value>
+               </PropertySetProperty>
+            </PropertyArray>
+         </Result>
+      </tns:GeocodeAddressResponse>
+   </soap:Body>
+</soap:Envelope>
