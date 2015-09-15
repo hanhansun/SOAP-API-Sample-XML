@@ -1,0 +1,97 @@
+With Output Spatial Reference defined. The Feature Service is in Projected Coordinate System
+This XML will query the first record in this feature service with an output geometry in GCS Degrees
+
+SOAP Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.esri.com/schemas/ArcGIS/10.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:Query>
+         <LayerOrTableID>0</LayerOrTableID>
+         <DefinitionExpression></DefinitionExpression>
+         <QueryFilter>
+            <WhereClause>OBJECTID = 1</WhereClause>
+            <OutputSpatialReference xsi:type="ns:GeographicCoordinateSystem">
+                  <WKT>GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4269]]</WKT>
+                  <XOrigin>-400</XOrigin>
+                  <YOrigin>-400</YOrigin>
+                  <XYScale>11258999068426.24</XYScale>
+                  <ZOrigin>0</ZOrigin>
+                  <ZScale>1</ZScale>
+                  <MOrigin>-100000</MOrigin>
+                  <MScale>10000</MScale>
+                  <XYTolerance>8.9831528411952133e-009</XYTolerance>
+                  <ZTolerance>2</ZTolerance>
+                  <MTolerance>0.001</MTolerance>
+                  <HighPrecision>true</HighPrecision>
+                  <LeftLongitude>-180</LeftLongitude>
+                  <WKID>4269</WKID>
+                  <LatestWKID>4269</LatestWKID>
+            </OutputSpatialReference>
+         </QueryFilter>
+         <ServiceDataOptions>
+            <Format>NATIVE</Format>
+         </ServiceDataOptions>
+         <GdbVersion></GdbVersion>
+         <MaximumAllowableOffset>0.0</MaximumAllowableOffset>
+      </ns:Query>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+------------------------------------------------华丽の分割线-----------------------------------------------------
+SOAP Response:
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.esri.com/schemas/ArcGIS/10.1">
+   <soap:Body>
+      <tns:QueryResponse>
+         <Result xsi:type="tns:ServiceData">
+            <ServiceDataOptions xsi:type="tns:ServiceDataOptions">
+               <ETag/>
+               <Format>NATIVE</Format>
+            </ServiceDataOptions>
+            <Object xsi:type="tns:DataObjects">
+               <DataObjectArray xsi:type="tns:ArrayOfDataObject">
+                  <DataObject xsi:type="tns:GraphicFeature">
+                     <Properties xsi:type="tns:PropertySet">
+                        <PropertyArray xsi:type="tns:ArrayOfPropertySetProperty">
+                           <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                              <Key>OBJECTID</Key>
+                              <Value xsi:type="xsd:int">1</Value>
+                           </PropertySetProperty>
+                           <PropertySetProperty xsi:type="tns:PropertySetProperty">
+                              <Key>NAME</Key>
+                              <Value xsi:type="xsd:string">AAA</Value>
+                           </PropertySetProperty>
+                        </PropertyArray>
+                     </Properties>
+                     <Geometry xsi:type="tns:PointN">
+                        <X>-121.41776799958176</X>
+                        <Y>40.05254400037807</Y>
+                     </Geometry>
+                  </DataObject>
+               </DataObjectArray>
+               <SpatialReference xsi:type="tns:GeographicCoordinateSystem">
+                  <WKT>GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4269]]</WKT>
+                  <XOrigin>-400</XOrigin>
+                  <YOrigin>-400</YOrigin>
+                  <XYScale>11258999068426.24</XYScale>
+                  <ZOrigin>0</ZOrigin>
+                  <ZScale>1</ZScale>
+                  <MOrigin>-100000</MOrigin>
+                  <MScale>10000</MScale>
+                  <XYTolerance>8.9831528411952133e-009</XYTolerance>
+                  <ZTolerance>2</ZTolerance>
+                  <MTolerance>0.001</MTolerance>
+                  <HighPrecision>true</HighPrecision>
+                  <LeftLongitude>-180</LeftLongitude>
+                  <WKID>4269</WKID>
+                  <LatestWKID>4269</LatestWKID>
+               </SpatialReference>
+            </Object>
+            <NotModified>false</NotModified>
+            <ResponseETag/>
+         </Result>
+      </tns:QueryResponse>
+   </soap:Body>
+</soap:Envelope>
