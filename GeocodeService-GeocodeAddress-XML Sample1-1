@@ -10,7 +10,7 @@ SOAP Request:
                <PropertySetProperty>
                   <Key>Address</Key>
                   <!--Optional:-->
-                  <Value>100 10th street, atlanta,ga, 30309</Value>
+                  <Value>3225 Springbank Ln, Charlotte, NC, 28226</Value>
                </PropertySetProperty>
             </PropertyArray>
          </Address>
@@ -30,8 +30,8 @@ SOAP Respond:
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Shape</Key>
                   <Value xsi:type="tns:PointN">
-                     <X>-84.390519308774557</X>
-                     <Y>33.781498994794021</Y>
+                     <X>-80.783143069087089</X>
+                     <Y>35.10151663438257</Y>
                      <SpatialReference xsi:type="tns:GeographicCoordinateSystem">
                         <WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4326]]</WKT>
                         <XOrigin>-400</XOrigin>
@@ -53,19 +53,19 @@ SOAP Respond:
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Status</Key>
-                  <Value xsi:type="xsd:string">T</Value>
+                  <Value xsi:type="xsd:string">M</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Score</Key>
-                  <Value xsi:type="xsd:double">92.430000000000007</Value>
+                  <Value xsi:type="xsd:double">100</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Match_addr</Key>
-                  <Value xsi:type="xsd:string">100 10th St NW, Atlanta, Georgia, 30309</Value>
+                  <Value xsi:type="xsd:string">3225 Springbank Ln, Charlotte, North Carolina, 28226</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>StAddr</Key>
-                  <Value xsi:type="xsd:string">100 10th St NW</Value>
+                  <Value xsi:type="xsd:string">3225 Springbank Ln</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Country</Key>
@@ -81,51 +81,51 @@ SOAP Respond:
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>X</Key>
-                  <Value xsi:type="xsd:double">-84.390519999999995</Value>
+                  <Value xsi:type="xsd:double">-80.783143999999993</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Y</Key>
-                  <Value xsi:type="xsd:double">33.781498999999997</Value>
+                  <Value xsi:type="xsd:double">35.101517000000001</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>DisplayX</Key>
-                  <Value xsi:type="xsd:double">-84.390519999999995</Value>
+                  <Value xsi:type="xsd:double">-80.783143999999993</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>DisplayY</Key>
-                  <Value xsi:type="xsd:double">33.781498999999997</Value>
+                  <Value xsi:type="xsd:double">35.101517000000001</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Xmin</Key>
-                  <Value xsi:type="xsd:double">-84.39152</Value>
+                  <Value xsi:type="xsd:double">-80.785144000000003</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Xmax</Key>
-                  <Value xsi:type="xsd:double">-84.389520000000005</Value>
+                  <Value xsi:type="xsd:double">-80.781143999999998</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Ymin</Key>
-                  <Value xsi:type="xsd:double">33.780498999999999</Value>
+                  <Value xsi:type="xsd:double">35.099516999999999</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Ymax</Key>
-                  <Value xsi:type="xsd:double">33.782499000000001</Value>
+                  <Value xsi:type="xsd:double">35.103516999999997</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Side</Key>
-                  <Value xsi:type="xsd:string">L</Value>
+                  <Value xsi:type="xsd:string">R</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>AddNum</Key>
-                  <Value xsi:type="xsd:string">100</Value>
+                  <Value xsi:type="xsd:string">3225</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>AddNumFrom</Key>
-                  <Value xsi:type="xsd:string">100</Value>
+                  <Value xsi:type="xsd:string">3245</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>AddNumTo</Key>
-                  <Value xsi:type="xsd:string">100</Value>
+                  <Value xsi:type="xsd:string">3123</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>StPreDir</Key>
@@ -137,31 +137,31 @@ SOAP Respond:
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>StName</Key>
-                  <Value xsi:type="xsd:string">10th</Value>
+                  <Value xsi:type="xsd:string">Springbank</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>StType</Key>
-                  <Value xsi:type="xsd:string">St</Value>
+                  <Value xsi:type="xsd:string">Ln</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>StDir</Key>
-                  <Value xsi:type="xsd:string">NW</Value>
+                  <Value xsi:type="xsd:string"/>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>City</Key>
-                  <Value xsi:type="xsd:string">Atlanta</Value>
+                  <Value xsi:type="xsd:string">Charlotte</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Region</Key>
-                  <Value xsi:type="xsd:string">Georgia</Value>
+                  <Value xsi:type="xsd:string">North Carolina</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>RegionAbbr</Key>
-                  <Value xsi:type="xsd:string">GA</Value>
+                  <Value xsi:type="xsd:string">NC</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>Postal</Key>
-                  <Value xsi:type="xsd:string">30309</Value>
+                  <Value xsi:type="xsd:string">28226</Value>
                </PropertySetProperty>
                <PropertySetProperty xsi:type="tns:PropertySetProperty">
                   <Key>LangCode</Key>
