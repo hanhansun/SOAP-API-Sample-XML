@@ -1,3 +1,6 @@
+1. With Spatial Reference defined
+   This XML update a projected (PCS) feature service with non-projected (GCS) input
+   
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://www.esri.com/schemas/ArcGIS/10.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
    <soapenv:Header/>
    <soapenv:Body>
@@ -34,6 +37,40 @@
                   		    	<WKID>4269</WKID>
                   			    <LatestWKID>4269</LatestWKID>
                		      </SpatialReference>
+                     </Geometry>
+                  </DataObject>
+               </DataObjectArray>
+         </DataObjects>
+         <GdbVersion></GdbVersion>
+         <RollbackOnFailure>true</RollbackOnFailure>
+         <RollbackOnFailureSpecified>true</RollbackOnFailureSpecified>
+      </ns:Update>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+2. Without Spatial Reference defined
+   This XML update the same projected (PCS) feature service with projected input (in the same spatial reference)
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://www.esri.com/schemas/ArcGIS/10.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:Update>
+         <LayerOrTableID>0</LayerOrTableID>
+         <DataObjects>
+            <DataObjectArray xsi:type="ns:ArrayOfDataObject">
+                  <DataObject xsi:type="ns:GraphicFeature">
+                     <Properties xsi:type="ns:PropertySet">
+                        <PropertyArray xsi:type="ns:ArrayOfPropertySetProperty">
+                           <PropertySetProperty xsi:type="ns:PropertySetProperty">
+                              <Key>OBJECTID</Key>
+                              <Value xsi:type="xsd:int">2</Value>
+                           </PropertySetProperty>
+                        </PropertyArray>
+                     </Properties>
+                        <Geometry xsi:type="ns:PointN">
+                        <X>6824546.116</X>
+                        <Y>1911617.787</Y>
                      </Geometry>
                   </DataObject>
                </DataObjectArray>
