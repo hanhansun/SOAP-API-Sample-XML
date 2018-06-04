@@ -30,7 +30,7 @@ SOAP Request:
    </soapenv:Body>
 </soapenv:Envelope>
 
----------------------------------------------华丽の分割线------------------------------------------------------
+--------------------------------------------------------------------------------------------
 SOAP Respond:
 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.esri.com/schemas/ArcGIS/10.1">
