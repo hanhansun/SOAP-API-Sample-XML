@@ -1,6 +1,5 @@
 
-/// For AO services:
-//import com.esri.schemas.arcgis._10.*;
+
 
 /// For AO11 services:
 //import com.esri.mapservice.*;
